@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import heroPoster from '../assets/hero_car.png'
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
@@ -19,7 +20,8 @@ const Hero = () => {
       position: 'relative',
       overflow: 'hidden',
       padding: 0,
-      zIndex: 1
+      zIndex: 1,
+      background: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${heroPoster}) center/cover no-repeat`
     }}>
       {/* 
         🚀 BACKGROUND VIDEO: 
@@ -31,6 +33,8 @@ const Hero = () => {
         loop 
         muted 
         playsInline
+        poster={heroPoster}
+        preload="auto"
         style={{
           position: 'absolute',
           top: 0,
