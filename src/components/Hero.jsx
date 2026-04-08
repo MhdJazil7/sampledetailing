@@ -45,7 +45,7 @@ const Hero = () => {
           filter: 'brightness(0.35)' // Keeps text readable
         }}
       >
-        <source src="/intro_video.mp4" type="video/mp4" />
+        <source src="intro_video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
